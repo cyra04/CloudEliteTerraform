@@ -1,0 +1,9 @@
+provider "aws" {
+  region     = "us-east-1" # Change to your desired region
+  access_key = "AKIASL5NL2KEQLCF7J5U"   # Replace with your Access Key
+  secret_key = "v6IhA1MQduMtbx6MmCJhEbQGvQdmsCbX6HOV2wdo"   # Replace with your Secret Key
+}
+resource "aws_s3_bucket" "my_bucket" {
+  bucket = "cy-bucket-puff" # Change to your unique bucket name
+  acl    = "private"
+}
